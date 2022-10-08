@@ -11,7 +11,7 @@ public class Anagram{
 
     public static void main(String[] args){
 
-        ArrayList<String> words = read_words("/C://Users//HP//Documents//Fall 2022 Classes//Software Development Code//anagram_words.txt/");
+        ArrayList<String> words = read_words("anagram_words.txt");
         int random_word_num = random.nextInt(words.size());
         String random_word = words.get(random_word_num);
         ArrayList<String> anagrams = find_anagrams(words, random_word);
